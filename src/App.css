@@ -1,0 +1,204 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.tddemo {
+  background-color: #d9e9d3;
+  width: 150px;
+  /* display: inline-block; */
+  line-height: 4.2;
+}
+.App tr th {
+  width: 100%;
+  max-width: 30%;
+}
+table {
+  margin: 20px 0 0;
+  display: inline-block;
+}
+div#root {
+  max-width: 39%;
+  margin: 0 auto;
+}
+.App tr {
+  height: 70px;
+}
+.App button {
+  float: right;
+}
+table tr th:first-child {
+  width: 100px;
+  vertical-align: top;
+}
+.App button {
+  padding: 10px 15px;
+  margin-top: 20px;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.App button:hover {
+  border: 1px solid transparent;
+  background: #000;
+  color: #fff;
+}
+form label {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1;
+  color: #000;
+  margin: 0 0 10px;
+}
+form select {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: 35px;
+  padding: 0 5px;
+  background: #c9d0d7;
+  color: #000;
+  border: 0;
+}
+form {
+  display: inline-block;
+  max-width: 310px;
+  width: 100%;
+  border: 10px solid #c9d0d7;
+  padding: 13% 8% 20px;
+  border-radius: 20px;
+}
+.availability-section {
+  width: 100%;
+  display: inline-block;
+  margin: 0 0 10px;
+}
+form lable {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+}
+.App button.save_btn {
+  background: #c9d0d7;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 600;
+  border: 1px solid transparent;
+  margin-top: 50%;
+  width: 100%;
+  max-width: 90px;
+}
+.App button.save_btn:hover {
+  border: 1px solid #c9d0d7;
+  background: #000;
+  color: #fff;
+}
+td.availble-warp {
+  border: none;
+}
+
+.App button.cancel_btn {
+  background: #c9d0d7;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 600;
+  border: 1px solid transparent;
+  margin-top: 50%;
+  width: 100%;
+  max-width: 90px;
+  margin-left: 10px;
+}
+.App button.cancel_btn:hover {
+  border: 1px solid #c9d0d7;
+  background: rgb(177, 19, 19);
+  color: #fff;
+}
+
+/* Model CSS Start */
+/* Modal */
+
+.modalContainer {
+  display: block;
+  pointer-events: auto;
+  background-color: rgb(90 84 84 / 80%) !important;
+  -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 99999;
+}
+
+.modal {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg-primary);
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: 1.1s ease-out;
+  box-shadow: var(--box-shadow1);
+  /* filter: blur(0); */
+  opacity: 1;
+  visibility: visible;
+  justify-content: center;
+  min-width: 25%;
+}
+
+.modal form {
+  opacity: 1;
+  background: #fff;
+}
+/* Model CSS End */
